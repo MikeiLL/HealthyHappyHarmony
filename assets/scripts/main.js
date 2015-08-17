@@ -73,7 +73,6 @@
 
   // Load Events
   $(document).ready(UTIL.loadEvents);
-  
   var nav = responsiveNav(".nav-collapse", { // Selector
   animate: true, // Boolean: Use CSS3 transitions, true or false
   transition: 284, // Integer: Speed of the transition, in milliseconds

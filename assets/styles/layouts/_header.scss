@@ -80,7 +80,7 @@ a:hover {
   NAV TOGGLE STYLES
 --------------------------------------------- */
 
-@font-face {
+/*@font-face {
   font-family: "responsivenav";
   src:url("../icons/responsivenav.eot");
   src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
@@ -89,7 +89,7 @@ a:hover {
     url("../icons/responsivenav.svg#responsivenav") format("svg");
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 .nav-toggle {
   position: fixed;
@@ -137,25 +137,36 @@ a:hover {
 @media screen and (min-width: 40em) {
 
 	.nav-collapse a {
-	  width: 40%;
+	  width: 100%;
 	  float: right;
 	}
 
-/* Override Responsive-nav media queries */
+	/* Override Responsive-nav media queries */
 
- .js .nav-collapse {
-    position: absolute;
-  }
-  .js .nav-collapse.closed {
-    max-height: none;
-  }
-  .nav-toggle {
-    display: block;
-  }
-/* End override Responsive-nav media queries */
+	 .js .nav-collapse {
+		position: relative;
+	  }
+	  .js .nav-collapse.closed {
+		max-height: 1px;
+	  }
+	  .nav-toggle {
+		display: block;
+	  }
+	/* End override Responsive-nav media queries */
   
+    .menu-menu-1-container {
+    	position: absolute;
+    	right: 1em;
+    	top: 1em;
+    	z-index: 1000;
+    	width: 40%;
+    	max-width: 5em;
+    	min-width: 3em;
+    	background: #999;
+    }
+    
 	.banner {
-		height: 12em;
+		height: 8em;
 	}
 
 	.banner {
