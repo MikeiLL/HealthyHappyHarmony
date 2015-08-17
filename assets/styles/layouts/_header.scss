@@ -62,14 +62,14 @@ a:hover {
   color: #fff;
   text-decoration: none;
   width: 100%;
-  background: #f4421a;
+  background: #0080C6;
   border-bottom: 1px solid white;
   padding: 0.7em 1em;
   float: right;
 }
 
 .nav-collapse ul ul a {
-  background: #ca3716;
+  background: red;
   padding-left: 2em;
 }
 
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .nav-toggle:before {
-  color: #f4421a; /* Edit this to change the icon color */
+  color: #0080C6; /* Edit this to change the icon color */
   font-family: "responsivenav", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -133,6 +133,13 @@ a:hover {
   content:"x";
 }
 
+.banner {
+	background: url('../images/Panoramic_detail_big.png');
+	background-repeat: none;
+	background-size: 1280px 600px;
+	height: 600px;
+	z-index: 1;
+}
 
 @media screen and (min-width: 40em) {
 
@@ -159,15 +166,10 @@ a:hover {
     	right: 1em;
     	top: 1em;
     	z-index: 1000;
-    	width: 40%;
-    	max-width: 5em;
-    	min-width: 3em;
-    	background: #999;
+    	width: 30%;
+    	max-width: 12em;
+    	min-width: 8em;
     }
-    
-	.banner {
-		height: 8em;
-	}
 
 	.banner {
 		z-index: -1;
