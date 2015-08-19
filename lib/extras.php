@@ -137,3 +137,16 @@ function register_hhharmony_menu() {
 
 add_action( 'init', __NAMESPACE__ . '\register_hhharmony_menu' ); 
 //*
+
+/* As recommended in Roots Discourse, this function is called
+ * within div wrap so we can eliminate the container and have
+ * full width rows and divs.
+*/
+function container_class() {
+  if (is_home() || is_front_page() || is_page('full-width') || 'movies' == get_post_type()) {
+    return 'container-fluid';
+  } else {
+    return 'container';
+  }
+}
+//*

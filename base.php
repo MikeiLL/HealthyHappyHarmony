@@ -2,6 +2,7 @@
 
 use Roots\Sage\Config;
 use Roots\Sage\Wrapper;
+use Roots\Sage\Extras;
 
 ?>
 
@@ -18,11 +19,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <?php if (is_home() || is_front_page()) : ?>
-    <div class="wrap" role="document">
-    <?php else : ?>
-    <div class="wrap container" role="document">
-     <?php endif ?>
+    <div class="wrap <?= Extras\container_class(); ?>" role="document">
       <div class="content row">
         <main class="main" role="main">
           <?php include Wrapper\template_path(); ?>
