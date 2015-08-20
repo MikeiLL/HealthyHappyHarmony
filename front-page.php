@@ -23,10 +23,8 @@
 				<h2>FAQ</h2>
 			
 					<?php 
-						$posts = get_posts(array(
-							'posts_per_page'	=> -1,
-							'post_type'			=> 'faq'
-						));
+					
+						$posts = get_field('faq');
 
 						if( $posts ): ?>
 	
