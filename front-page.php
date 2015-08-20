@@ -84,7 +84,7 @@
 
 		<div class="row col-wrap">
 			<div class="col-sm-4 col">
-				<div class="well front-well-dark">
+				<div class="well full-width-well-dark">
 					<p class="lead">Guess what, dear friends?</p>
 					<?php the_field( 'intro' ) ?>
 				</div>
@@ -105,7 +105,7 @@
 			</div><!-- end span 4-->
 			
 			<div class="col-sm-4 col">
-				<div class="well front-well-dark">
+				<div class="well full-width-well-dark">
 				<h2>News</h2>
 			
 					<p class="lead">You'll be thrilled to learn about this</p>
