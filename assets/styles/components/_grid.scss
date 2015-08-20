@@ -9,9 +9,29 @@
   @include make-sm-column($sidebar-sm-columns);
 }
 
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+/* The following from JSFiddle for matching height responsive fluid divs */
+@media (min-width: 768px) {
+
+	/* top row */
+	.col .well{ 
+			margin-bottom: -99999px;
+			padding-bottom: 99999px;  
+	}
+
+	/* bottom row */
+	.col-base{ 
+			margin-top: -15px; /* cut off top portion of bottom wells */
+	}
 }
+
+@media (max-width: 767px) {
+	.row.base{
+			display:none;
+	}
+}
+
+.col-wrap{
+    overflow: hidden; 
+}
+/* End from JSFiddle for matching height responsive fluid divs */
+
