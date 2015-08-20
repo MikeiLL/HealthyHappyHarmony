@@ -8,3 +8,10 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
