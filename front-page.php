@@ -66,6 +66,7 @@
 		<div class="row col-wrap">
 			<div class="col-sm-6 col">
 				<div class="well">
+					<p class="lead">Guess what, dear friends?</p>
 					<?php the_field( 'intro' ) ?>
 				</div>
 			</div><!-- end span 6-->
