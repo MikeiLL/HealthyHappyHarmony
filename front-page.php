@@ -24,7 +24,12 @@
 			
 					<?php 
 					
-						$posts = get_field('faq');
+						$posts = get_posts(array(
+							'posts_per_page'	=> -1,
+							'post_type'			=> 'faq',
+							'orderby'				=> 'title', 
+							'order' 				=> 'ASC'
+						));
 
 						if( $posts ): ?>
 	

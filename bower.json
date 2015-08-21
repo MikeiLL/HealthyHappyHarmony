@@ -9,7 +9,8 @@
   "dependencies": {
     "modernizr": "2.8.2",
     "bootstrap-sass-official": "3.3.5",
-    "responsive-nav": "~1.0.39"
+    "responsive-nav": "~1.0.39",
+    "colors": "~2.2.0"
   },
   "overrides": {
     "modernizr": {
