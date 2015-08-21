@@ -15,7 +15,7 @@
 			<div class="free_consultation">
 				<h2>Our pleasure</h2>
 				<p>Is to offer you a 
-				<a class="btn btn-default" href="#">Free Consultation</a></p>
+				<a class="btn btn-orange" href="#">Free Consultation</a></p>
 			</div>
 		</div>
 	<?php endif ?>

@@ -1,0 +1,6 @@
+.btn-orange {
+		background-color: mix(red, yellow);
+	}
+.btn-orange:hover {
+		background-color: transparentize(orange, .6);
+	}
