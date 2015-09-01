@@ -5,7 +5,10 @@
 	padding: 3rem;
 	margin-top: 2rem;
 	a { 
-			color: $brand-primary;
+			color: lighten($brand-primary, 13%);
+		}
+	a:hover { 
+			color: lighten($brand-primary, 6.5%);
 		}
 		
 	}

@@ -23,7 +23,7 @@
 			<div class="col-sm-4 col">
 				<div class="well full-width-well-dark">
 					<p class="lead">Guess what, dear friends?</p>
-					<?php the_field( 'intro' ) ?>
+					<?php get_template_part('templates/front-page/resources'); ?>
 				</div>
 			</div><!-- end span 4-->
 		
