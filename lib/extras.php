@@ -222,7 +222,7 @@ add_action( 'init', __NAMESPACE__ . '\register_hhharmony_menu' );
  * full width rows and divs.
 */
 function container_class() {
-  if (is_home() || is_front_page() || is_page('full-width') || 'movies' == get_post_type()) {
+  if (is_home() || is_front_page() || 'movies' == get_post_type()) {
     return 'container-fluid';
   } else {
     return 'container';

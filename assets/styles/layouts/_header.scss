@@ -38,10 +38,15 @@
   color: #fff;
   text-decoration: none;
   width: 100%;
-  background: #0080C6;
-  border-bottom: 1px solid white;
+  background: $brand-primary;
+  background-clip: padding-box;
+  border: 3px solid rgba(255, 255, 255, 0.9);
   padding: 0.7em 1em;
   float: right;
+}
+
+.nav-collapse a:hover {
+  background: lighten($brand-primary, 2.5%);
 }
 
 .nav-collapse ul ul a {
@@ -49,7 +54,11 @@
   padding-left: 2em;
 }
 
-
+.top-navigation {
+	background:rgba(255,255,255,0.5);
+	padding: 2rem;
+	border-radius: 4px;
+}
 
 
 /* ------------------------------------------
@@ -91,7 +100,7 @@
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  font-size: 28px;
+  font-size: 38px;
   text-transform: none;
   position: absolute;
   content: "≡";
@@ -105,7 +114,7 @@
 }
 
 .nav-toggle.active::before {
-  font-size: 24px;
+  font-size: 34px;
   content:"x";
 }
 
@@ -125,13 +134,41 @@
 	min-height: 8em;
 }
 
+.navbar-brand {
+    background-image: url("../images/hwr-logo-sm.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 180px;
+    background-size: 180px 60px;
+}
+.navbar-brand, .text-hide {
+    background-color: transparent;
+    border: 0 none;
+    color: transparent;
+    font: 0px/0 a;
+    text-shadow: none;
+}
+.navbar-brand {
+    float: left;
+    line-height: 25px;
+    padding: 37.5px 15px;
+}
+
 .free_consultation {
 		position: absolute;
 		top: 200px;
 		right: 20px;
+		background:rgba(255,255,255,0.5);
+		padding: 2rem;
+		border-radius: 4px;
 	}
 
 @media screen and (min-width: 40em) {
+
+	.nav-collapse a {
+		border: 3px solid rgba(255, 255, 255, 0.2);
+	}
 
 	.nav-collapse a {
 	  width: 100%;

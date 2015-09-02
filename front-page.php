@@ -22,7 +22,6 @@
 		<div class="row col-wrap">
 			<div class="col-sm-4 col">
 				<div class="well full-width-well-dark">
-					<p class="lead">Guess what, dear friends?</p>
 					<?php get_template_part('templates/front-page/resources'); ?>
 				</div>
 			</div><!-- end span 4-->

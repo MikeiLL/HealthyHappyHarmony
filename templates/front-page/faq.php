@@ -12,27 +12,6 @@
 						));
 
 						if( $posts ): ?>
-	
-							<dl class="dl-horizontal">
-		
-							<?php foreach( $posts as $post ): 
-		
-								setup_postdata( $post )
-		
-								?>
-								<dt>
-									<?php the_title(); ?>
-								</dt>
-								
-								<dd>
-									<?php the_content(); ?>
-								</dd>
-	
-							<?php endforeach; ?>
-	
-							</dl>
-	
-							<?php wp_reset_postdata(); ?>
 							
 							<div class="list-group">
 									
