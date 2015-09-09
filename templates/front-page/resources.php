@@ -18,12 +18,14 @@
 		
 								?>
 								
-								<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+								<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+															<a href="<?php the_permalink(); ?>">
+															<?php
 															the_post_thumbnail('thumb', array( 'class'	=> "img-responsive img-center"));
-														}  ?>
+														}  ?></a>
 
 
-									<h4><?php the_title(); ?></h4>
+									<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
 									<p><?php the_excerpt(); ?></p>
 									
