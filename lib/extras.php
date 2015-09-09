@@ -282,3 +282,14 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
   }
 }
 // End BNS Dynamic Copyright
+
+// Let's disable comments on custom post types
+function close_comments( $posts ) {
+	if ( !is_single() ) { return $posts; }
+		if ($posts[0]->post_type != 'post') {;
+		$posts[0]->comment_status = 'closed';
+		$posts[0]->ping_status    = 'closed';
+		}
+	return $posts;
+}
+add_filter( 'the_posts', __NAMESPACE__ . '\\close_comments' ); 
