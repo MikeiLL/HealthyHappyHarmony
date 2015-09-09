@@ -8,7 +8,7 @@
 <?php endif; ?>
 
 <?php
-$args = array( 'post_type' => 'post' );
+$args = array( 'post_type' => 'post', 'paged' => $paged );
 $hwr_loop = new WP_Query( $args );
 ?>
 
