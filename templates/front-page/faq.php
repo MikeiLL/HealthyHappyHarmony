@@ -1,4 +1,4 @@
-<div class="col-sm-6 col">
+		<div class="col-sm-4 col">
 				<div class="well">
 				<h2>FAQ</h2>
 			

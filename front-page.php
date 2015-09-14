@@ -11,6 +11,7 @@
   <!-- row for wells -->
 		<div class="row col-wrap">
 			<?php get_template_part('templates/front-page/intro'); ?>
+			<?php get_template_part('templates/front-page/contact'); ?>
 			<?php get_template_part('templates/front-page/faq'); ?>
 		</div><!-- end row -->
 		
@@ -20,34 +21,10 @@
 		<!-- top row of wells or rounded corner divs -->
 
 		<div class="row col-wrap">
-			<div class="col-sm-4 col">
 				<div class="well full-width-well-dark">
-					<?php get_template_part('templates/front-page/resources'); ?>
+					<?php get_template_part('templates/front-page/articles'); ?>
 				</div>
-			</div><!-- end span 4-->
 		
-			<div class="col-sm-4 col">
-				<div class="well">
-				<h2>FAQ</h2>
-			
-					<ul class="list-inline">
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-					</ul>
-					<p class="visible-xs-block">I see you're using your phone.</p>
-					<p class="visible-sm-block">I see you're using your... tablet?</p>
-				</div>
-			</div><!-- end span 4-->
-			
-			<div class="col-sm-4 col">
-				<div class="well full-width-well-dark">
-				<h2>News</h2>
-			
-					<p class="lead">You'll be thrilled to learn about this</p>
-					<p>Brand new thing here.</p>
-				</div>
-			</div><!-- end span 4-->
 			 
 		</div><!-- end row -->
 		
