@@ -124,18 +124,6 @@
 	position: relative;
 	}
 
-.greeting {
-	background: url('../images/deep_blue.png');
-	background-repeat: none;
-	background-size: 1280px 600px;
-	height: 400px;
-	background-position: center bottom;
-}
-
-.banner {
-	min-height: 8em;
-}
-
 .navbar-brand {
     background-image: url("../images/hwr-logo-sm.png");
     background-position: center center;
@@ -164,6 +152,33 @@
 		width: 23rem;
 		margin-top: 25rem;
 	}
+
+.tagline {
+	text-align: center;
+	font-size: 2rem;
+	word-spacing: 30px;
+	opacity: 0.4;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40rem;
+	color: $brand-primary;
+	width: 80rem;
+	text-transform: capitalize;
+	}
+
+.banner {
+	min-height: 8em;
+}
+
+.greeting {
+	background: url('../images/deep_blue.png');
+	background-repeat: none;
+	background-size: 1280px 600px;
+	height: 400px;
+	background-position: center bottom;
+	position: relative;
+}
 
 @media screen and (min-width: 40em) {
 
@@ -213,7 +228,7 @@
 	.free_consultation {
 		padding: 2rem;
 		border-radius: 4px;
-		margin-top: 45rem;
+		margin-top: 35rem;
 	}
   
 }
@@ -224,4 +239,7 @@
 		background-position: center top;
 		background-size: 1792px 840px;
 		}
+	.tagline {
+		font-size: 6rem;
+	}
 }

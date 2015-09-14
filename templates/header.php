@@ -16,7 +16,9 @@
 				<button class="btn btn-primary btn-lg outline" type="button">Free Consultation</button>
 			</div>
 		</div>
+		<div class="center-block tagline"><?php echo get_bloginfo ( 'description' ); ?></div>
   </div>
+  
 	<?php endif ?>
 
 </header>
