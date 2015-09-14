@@ -9,17 +9,17 @@
       endif;
       ?>
     </nav>
-  <?php if(is_front_page()) : ?>
+
   <div class="container-full">
     <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">Hamilton Wellness Resources</a>
+      <?php if(is_front_page()) : ?>
 			<div class="center-block free_consultation">
 				<button class="btn btn-primary btn-lg outline" type="button">Free Consultation</button>
 			</div>
 		</div>
 		<div class="center-block tagline"><?php echo get_bloginfo ( 'description' ); ?></div>
-  </div>
-  
 	<?php endif ?>
+  </div> <! -- end container -->
 
 </header>
 <?php if ( !is_front_page() && !is_home() && function_exists('yoast_breadcrumb') ) {
