@@ -77,6 +77,7 @@
 }*/
 
 .nav-toggle {
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
   position: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -124,10 +125,11 @@
 	}
 
 .greeting {
-	background: url('../images/Panoramic_detail_big.png');
+	background: url('../images/deep_blue.png');
 	background-repeat: none;
 	background-size: 1280px 600px;
 	height: 400px;
+	background-position: center bottom;
 }
 
 .banner {
@@ -156,12 +158,11 @@
 }
 
 .free_consultation {
-		position: absolute;
-		top: 200px;
-		right: 20px;
 		background:rgba(255,255,255,0.5);
 		padding: 2rem;
 		border-radius: 4px;
+		width: 23rem;
+		margin-top: 25rem;
 	}
 
 @media screen and (min-width: 40em) {
@@ -204,14 +205,23 @@
 				box-shadow: 0px 0px 8px 2px #333;
 	}
 	
-.greeting {
+	.greeting {
 	height: 600px;
+	background-position: center top;
 }
 	
 	.free_consultation {
-		position: absolute;
-		top: 400px;
-		right: 200px;
+		padding: 2rem;
+		border-radius: 4px;
+		margin-top: 45rem;
 	}
   
+}
+
+@media screen and (min-width: 40em) {
+	.greeting {
+		height: 600px;
+		background-position: center top;
+		background-size: 1792px 840px;
+		}
 }

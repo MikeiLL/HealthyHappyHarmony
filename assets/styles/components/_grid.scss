@@ -9,6 +9,14 @@
   @include make-sm-column($sidebar-sm-columns);
 }
 
+.container-full {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	width: 100%;
+	position: relative;
+	overflow: auto;
+}
+
 /* The following adapted from JSFiddle for matching height responsive fluid divs */
 @media (min-width: 768px) {
 
@@ -52,3 +60,5 @@
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 }
+
+
