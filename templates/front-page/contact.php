@@ -3,11 +3,11 @@
 					<h2 class="text-center">Contact</h2>
 			
 					<?php 
-					
+						$the_slug = 'contact-mini';
 						$posts = get_posts(array(
 							'posts_per_page'	=> 1,
 							'post_type'			=> 'page',
-							'post_title'				=> 'Contact Mini', 
+							'name'				=> $the_slug, 
 							'order' 				=> 'ASC'
 						));
 
