@@ -1,4 +1,4 @@
-			<h2>Articles</h2>
+			<h2 class="text-center"> Recent Articles</h2>
 		
 				<?php 
 				

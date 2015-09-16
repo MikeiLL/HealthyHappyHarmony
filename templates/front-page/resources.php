@@ -1,5 +1,5 @@
 <div class="col">
-				<h2>Resources</h2>
+				<h2 class="text-center">Resources</h2>
 			
 					<?php 
 					

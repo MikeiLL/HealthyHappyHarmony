@@ -1,6 +1,6 @@
 		<div class="col-sm-4 col">
 				<div class="well">
-					<h2>Contact</h2>
+					<h2 class="text-center">Contact</h2>
 			
 					<?php 
 					

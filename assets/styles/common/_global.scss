@@ -30,6 +30,11 @@ body {
 	font-family: Avenir, Helvetica, sans-serif;
 }
 
+/* ------------------------------------------
+  END RESET
+--------------------------------------------- */
+
+
 #box {
     background:rgb(52,163,220);  
     background: transparent\9;  
@@ -53,3 +58,11 @@ body {
 .breadcrumbs {margin-top: .8rem; margin-left: 1.5rem;}
 
 .entry-content {font-size: $font-size-large;}
+
+
+@font-face {
+	font-family: 'Intro-head-r';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/introheadr-base-webfont.ttfs');
+}
