@@ -120,6 +120,7 @@ add_action( 'init',  __NAMESPACE__ . '\\create_faq_posttype' );
 //EOF FAQ POST TYPE
 
 //* BOF SERVICE POST TYPE
+
 // Our custom post type function
 function create_service_posttype() {
 
@@ -137,11 +138,9 @@ function create_service_posttype() {
 		)
 	);
 }
-// Hooking up our function to theme setup
-add_action( 'init',  __NAMESPACE__ . '\\create_service_posttype' );
 
 /*
-* Create FAQ Post Type
+* Create Service Post Type
 */
 
 function service_post_type() {
@@ -185,7 +184,7 @@ function service_post_type() {
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 5,
 		'can_export'          => true,
-		'has_archive'         => true,
+		'has_archive'         => 'services',
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',

@@ -1,7 +1,10 @@
 		<div class="col-sm-4 col">
 				<div class="well">
-				<h2 class="text-center">FAQ</h2>
-			
+				<a href="FAQ/"><span class="glyphicon glyphicon-record featured_item_icons text-center"></span></a>
+				<div class="no_color">
+					<a href="FAQ/"><h2 class="front-page-heading text-center">FAQ</h2></a>
+			  </div>
+			  
 					<?php 
 					
 						$posts = get_posts(array(

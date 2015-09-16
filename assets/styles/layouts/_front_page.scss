@@ -1,0 +1,14 @@
+.featured_item_icons { 
+	color: $brand_primary;
+	font-size: 6rem;
+	display:block;
+	text-align:center;
+	margin-bottom: 2rem;
+	}
+
+.main .row .col .well a:hover {
+	text-decoration: none;
+	color: $gray;
+	}
+	
+.no_color a { color: $gray-dark; }

@@ -1,4 +1,4 @@
-			<h2 class="text-center"> Recent Articles</h2>
+			<h2 class="text-center">Recent Articles</h2>
 		
 				<?php 
 				
@@ -14,9 +14,9 @@
 					<div class="well">
 				<h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
 				<?php if (has_post_thumbnail()) : ?>
-					<figure> <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumb', array( 'class'	=> "img-responsive img-center")); ?></a> </figure>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumb', array( 'class'	=> "img-responsive pull-right")); ?></a>
 				<?php endif; ?>
-				<p ><?php echo the_excerpt();?></p>
+				<?php echo the_excerpt();?>
 				</div>
 			</div>
 			<?php endwhile; else:
