@@ -181,6 +181,19 @@
 	position: relative; 
 }
 
+
+@media screen and (min-width: 20em) {
+	.greeting {
+		height: 600px;
+		background-position: center center;
+		background-size: 1792px 840px;
+		}
+	.tagline {
+		font-size: 4rem;
+		margin-left: -45rem;
+	}
+}
+
 @media screen and (min-width: 40em) {
 
 	.nav-collapse a {
@@ -237,22 +250,10 @@
 		background-position: center center;
 		background-size: 1792px 840px;
 		}
-		
+}
+@media screen and (min-width: 60em) {
 	.tagline {
 		font-size: 6rem;
-		margin-left: -40rem;
-	}
-  
-}
-
-@media screen and (min-width: 30em) {
-	.greeting {
-		height: 600px;
-		background-position: center center;
-		background-size: 1792px 840px;
-		}
-	.tagline {
-		font-size: 4rem;
 		margin-left: -45rem;
 	}
 }
