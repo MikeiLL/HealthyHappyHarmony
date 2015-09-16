@@ -10,7 +10,7 @@
   
   <!-- row for wells -->
 		<div class="row col-wrap">
-			<?php get_template_part('templates/front-page/intro'); ?>
+			<?php get_template_part('templates/front-page/services'); ?>
 			<?php get_template_part('templates/front-page/contact'); ?>
 			<?php get_template_part('templates/front-page/faq'); ?>
 		</div><!-- end row -->

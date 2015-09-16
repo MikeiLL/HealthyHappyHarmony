@@ -54,6 +54,7 @@ function create_faq_posttype() {
 // Hooking up our function to theme setup
 add_action( 'init',  __NAMESPACE__ . '\\create_faq_posttype' );
 
+// BOF CUSTOM POST TYPES
 /*
 * Create FAQ Post Type
 */
@@ -110,47 +111,54 @@ function faq_post_type() {
 
 }
 
-//* BOF Resource POST TYPE
-// Our custom post type function
-function create_resources_posttype() {
+/* Hook into the 'init' action so that the function
+* Containing our post type registration is not 
+* unnecessarily executed. 
+*/
+add_action( 'init',  __NAMESPACE__ . '\\create_faq_posttype' );
 
-	register_post_type( 'Resource',
+//EOF FAQ POST TYPE
+
+//* BOF SERVICE POST TYPE
+// Our custom post type function
+function create_service_posttype() {
+
+	register_post_type( 'Service',
 	// CPT Options
 		array(
 			'labels' => array(
-				'name' => __( 'Resources' ),
-				'singular_name' => __( 'Resource' )
+				'name' => __( 'Services' ),
+				'singular_name' => __( 'Service' )
 			),
 			'public' => true,
 			'has_archive' => true,
-			'rewrite' => array('slug' => 'Resource'),
-			'menu_icon'   => 'dashicons-book',
+			'rewrite' => array('slug' => 'Service'),
+			'menu_icon'   => 'dashicons-hammer',
 		)
 	);
 }
 // Hooking up our function to theme setup
-add_action( 'init',  __NAMESPACE__ . '\\create_faq_posttype' );
-add_action( 'init',  __NAMESPACE__ . '\\create_resources_posttype' );
+add_action( 'init',  __NAMESPACE__ . '\\create_service_posttype' );
 
 /*
-* Create Resource Post Type
+* Create FAQ Post Type
 */
 
-function resources_post_type() {
+function service_post_type() {
 
 // Set UI labels for Custom Post Type
 	$labels = array(
-		'name'                => _x( 'Resource', 'Post Type General Name', 'sage' ),
-		'singular_name'       => _x( 'Resource', 'Post Type Singular Name', 'sage' ),
-		'menu_name'           => __( 'Resource', 'sage' ),
-		'parent_item_colon'   => __( 'Parent Resource', 'sage' ),
-		'all_items'           => __( 'All Resources', 'sage' ),
-		'view_item'           => __( 'View Resource', 'sage' ),
-		'add_new_item'        => __( 'Add New Resource', 'sage' ),
+		'name'                => _x( 'Service', 'Post Type General Name', 'sage' ),
+		'singular_name'       => _x( 'Service', 'Post Type Singular Name', 'sage' ),
+		'menu_name'           => __( 'Service', 'sage' ),
+		'parent_item_colon'   => __( 'Parent Service', 'sage' ),
+		'all_items'           => __( 'All Services', 'sage' ),
+		'view_item'           => __( 'View Service', 'sage' ),
+		'add_new_item'        => __( 'Add New Service', 'sage' ),
 		'add_new'             => __( 'Add New', 'sage' ),
-		'edit_item'           => __( 'Edit Resource', 'sage' ),
-		'update_item'         => __( 'Update Resource', 'sage' ),
-		'search_items'        => __( 'Search Resource', 'sage' ),
+		'edit_item'           => __( 'Edit Service', 'sage' ),
+		'update_item'         => __( 'Update Service', 'sage' ),
+		'search_items'        => __( 'Search Service', 'sage' ),
 		'not_found'           => __( 'Not Found', 'sage' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'sage' ),
 	);
@@ -158,8 +166,8 @@ function resources_post_type() {
 // Set other options for Custom Post Type
 	
 	$args = array(
-		'label'               => __( 'Resource', 'sage' ),
-		'description'         => __( 'New Resources to showcase', 'sage' ),
+		'label'               => __( 'Service', 'sage' ),
+		'description'         => __( 'New Services to showcase', 'sage' ),
 		'labels'              => $labels,
 		// Features this CPT supports in Post Editor
 		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
@@ -184,7 +192,7 @@ function resources_post_type() {
 	);
 	
 	// Registering your Custom Post Type
-	register_post_type( 'Resource', $args );
+	register_post_type( 'Service', $args );
 
 }
 
@@ -192,18 +200,22 @@ function resources_post_type() {
 * Containing our post type registration is not 
 * unnecessarily executed. 
 */
+add_action( 'init',  __NAMESPACE__ . '\\create_service_posttype' );
 
-add_action( 'init',  __NAMESPACE__ . '\\faq_post_type', 0 );
-add_action( 'init',  __NAMESPACE__ . '\\resources_post_type', 0 );
+//EOF SERVICE POST TYPE
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\\add_my_post_types_to_query' );
 
 function add_my_post_types_to_query( $query ) {
 	if ( is_home() && $query->is_main_query() )
-		$query->set( 'post_type', array( 'post', 'FAQ', 'Resource' ) );
+		$query->set( 'post_type', array( 'post', 'FAQ', 'Service' ) );
 	return $query;
 }
-//*EOF CUSTOM POST TYPE
+
+
+//*EOF CUSTOM POST TYPES
+
+
 
 //*FOOTER MENU
 function register_hhharmony_menu() {

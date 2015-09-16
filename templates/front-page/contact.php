@@ -5,9 +5,9 @@
 					<?php 
 					
 						$posts = get_posts(array(
-							'posts_per_page'	=> -1,
-							'post_type'			=> 'resource',
-							'orderby'				=> 'title', 
+							'posts_per_page'	=> 1,
+							'post_type'			=> 'page',
+							'post_title'				=> 'Contact Mini', 
 							'order' 				=> 'ASC'
 						));
 
