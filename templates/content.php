@@ -9,11 +9,7 @@
       		get_template_part('templates/entry-meta'); ?>
   </header>
   <div class="entry-summary">
-    <?php if (($posts[0]->post_type == 'faq') || ($posts[0]->post_type == 'faq') && is_archive()) {
-    					the_content();
-    					} else { 
-    					the_excerpt();
-    					}
+    <?php the_excerpt();
     					?>
   </div>
 </article>

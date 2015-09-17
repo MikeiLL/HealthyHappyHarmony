@@ -1,5 +1,5 @@
 <header class="banner" role="banner">
-	<?php if(is_home() || is_front_page()) : ?>
+	<?php if(is_front_page()) : ?>
 		<div class="greeting">
 	<?php endif ?>
     <nav role="navigation">
