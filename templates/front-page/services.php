@@ -1,6 +1,6 @@
 		<div class="col-sm-4 col">
 				<div class="well">
-				<a href="Service/"><span class="glyphicon glyphicon-record featured_item_icons text-center"></span></a>
+				<a href="Service/"><span class="featured_items glyphicon glyphicon-record featured_item_icons text-center"></span></a>
 				<div class="no_color">
 					<a href="Service/"><h2 class="front-page-heading text-center">Services</h2></a>
 				</div>
