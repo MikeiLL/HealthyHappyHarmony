@@ -305,7 +305,7 @@ function close_comments( $posts ) {
 }
 add_filter( 'the_posts', __NAMESPACE__ . '\\close_comments' ); 
 
-// Create a Featured Article Function
+// BOF Featured Article
 function register_post_assets(){
     add_meta_box('featured-post', __('Featured Post'), __NAMESPACE__ . '\\add_featured_meta_box', 'post', 'advanced', 'high');
 }
@@ -322,3 +322,5 @@ function save_featured_meta($post_id){
         update_post_meta(esc_attr($post_id), '_featured-post', esc_attr($_REQUEST['featured-post'])); 
         }
 add_action('save_post', __NAMESPACE__ . '\\save_featured_meta');
+// EOF Featured Article 
+
