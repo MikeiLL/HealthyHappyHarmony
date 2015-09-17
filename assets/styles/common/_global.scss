@@ -53,12 +53,58 @@ body {
             box-shadow: 0px 0px 8px 2px #000000;
 }
 
+.shadow {
+  display: inline-block;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: $neutral_gray 3px 3px 6px inset;
+  -webkit-box-shadow: $neutral_gray 3px 3px 6px inset;
+  box-shadow: $neutral_gray 3px 3px 6px inset;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.shadow:hover {
+  -moz-box-shadow: $neutral_gray 5px 5px 12px inset;
+  -webkit-box-shadow: $neutral_gray 5px 5px 12px inset;
+  box-shadow: $neutral_gray 5px 5px 12px inset;
+}
+.shadow img {
+  max-width: 100%;
+  z-index: -1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
 .img-center {margin:0 auto;}
+
+.wp-post-image {
+	margin: .5rem;
+	}
 
 .breadcrumbs {margin-top: .8rem; margin-left: 1.5rem;}
 
-.entry-content {font-size: $font-size-large;}
+.large_text_display { font-size: $font-size-large; 
+		p { 
+			margin: 1rem;
+			}
+	}
+	
+blockquote { 
+			margin-left: 1.2rem;
+			}
 
+ul { margin: 1rem; 
+ li { 
+ 			margin-left: 1.5rem; 
+ 		}
+}
+
+p {
+	margin-bottom: .6rem;
+}
 
 @font-face {
 	font-family: 'Intro-head-r';

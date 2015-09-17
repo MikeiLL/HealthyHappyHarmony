@@ -14,7 +14,9 @@
 					<div class="well">
 				<h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
 				<?php if (has_post_thumbnail()) : ?>
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumb', array( 'class'	=> "img-responsive pull-right")); ?></a>
+					<div class="shadow pull-right">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumb', array( 'class'	=> "img-responsive")); ?></a>
+					</div>
 				<?php endif; ?>
 				<?php echo the_excerpt();?>
 				</div>

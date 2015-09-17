@@ -24,7 +24,7 @@
 		
 								?>
 
-							<a href="<?php the_permalink(); ?>" class="list-group-item">
+							<a href="Service/" class="list-group-item">
 
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
