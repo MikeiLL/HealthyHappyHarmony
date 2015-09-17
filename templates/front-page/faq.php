@@ -24,11 +24,11 @@
 		
 								?>
 
-							<a href="<?php the_permalink(); ?>" class="list-group-item">
+							<a href="FAQ" class="list-group-item">
 
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
-									<p class="list-group-item-text"><?php the_content(); ?></p>
+									<p class="list-group-item-text"><?php the_excerpt(); ?></p>
 
 							</a>
 							
