@@ -84,6 +84,10 @@ body {
 	margin: .5rem;
 	}
 
+.hentry img {
+	@extend .img-responsive;
+}	
+
 .breadcrumbs {margin-top: .8rem; margin-left: 1.5rem;}
 
 .large_text_display { font-size: $font-size-large; 

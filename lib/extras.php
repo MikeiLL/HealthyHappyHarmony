@@ -323,24 +323,3 @@ function save_featured_meta($post_id){
         }
 add_action('save_post', __NAMESPACE__ . '\\save_featured_meta');
 // EOF Featured Article 
-
-// Add responsive class to all images
-// http://stackoverflow.com/questions/20473004/how-to-add-automatic-class-in-image-for-wordpress-post
-function add_responsive_class($content){
-
-        $content = mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8");
-        $document = new DOMDocument();
-        libxml_use_internal_errors(true);
-        $document->loadHTML(utf8_decode($content));
-
-        $imgs = $document->getElementsByTagName('img');
-        foreach ($imgs as $img) {           
-          $existing_class = $img->getAttribute('class');
-					$img->setAttribute('class', "img-responsive $existing_class");
-        }
-
-        $html = $document->saveHTML();
-        return $html;   
-}
-add_filter('the_content', __NAMESPACE__ . '\\add_responsive_class');
-
