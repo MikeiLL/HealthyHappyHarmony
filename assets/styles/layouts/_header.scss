@@ -170,6 +170,7 @@
 
 .banner {
 	min-height: 8em;
+	background: rgba(0, 0, 0, 0) url("../images/deep_blue.png") repeat scroll center center / 1280px 600px;
 }
 
 .greeting {
@@ -188,6 +189,10 @@
 		background-position: center center;
 		background-size: 1792px 840px;
 		}
+		
+	.banner {
+		background-size: 1792px 840px;
+	}
 	.tagline {
 		font-size: 4rem;
 		margin-left: -45rem;

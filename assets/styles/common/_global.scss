@@ -88,6 +88,16 @@ body {
 	@extend .img-responsive;
 }	
 
+/*
+Text Styling
+*/
+
+.page-header h1 {
+	text-transform: uppercase;
+	margin-left: 65%;
+	font-style: italic;
+}
+
 .breadcrumbs {margin-top: .8rem; margin-left: 1.5rem;}
 
 .large_text_display { font-size: $font-size-large; 
@@ -97,7 +107,11 @@ body {
 	}
 	
 blockquote { 
-			margin-left: 1.2rem;
+			margin: 1.2rem;
+			cite {
+					margin-left: 32%;
+					display:block;
+				}
 			}
 
 ul { margin: 1rem; 
