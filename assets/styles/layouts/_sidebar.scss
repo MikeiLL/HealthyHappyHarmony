@@ -26,3 +26,14 @@
 		text-align: center;
 	}
 }
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.widget_recent_entries {
+		background-position: 30px 50px;
+		background-size: 80%;
+		ul {
+  		margin-top: 125px;
+  		font-size: $font-size-base;
+  	}
+	}
+}

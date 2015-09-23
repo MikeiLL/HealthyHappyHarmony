@@ -43,6 +43,10 @@ body {
     padding: 3em;
 }
 
+/* 
+Image Styling
+*/
+
 .box-shadow:after {
     content: "";
     height: 1px;
@@ -84,6 +88,11 @@ body {
 	margin: .5rem;
 	}
 
+.col-sm-4 {
+	.wp-post-image {
+		@extend .img-center;
+		}
+}
 .hentry img {
 	@extend .img-responsive;
 }	
@@ -92,10 +101,22 @@ body {
 Text Styling
 */
 
+.well {
+	h2 {
+		margin-bottom: 2.2rem;
+		}
+	}
+	
 .page-header h1 {
 	text-transform: uppercase;
-	margin-left: 65%;
+	margin-left: 25%;
 	font-style: italic;
+}
+
+@media (min-width: 768px) {
+	.page-header h1 {
+		margin-left: 65%;
+	}
 }
 
 .breadcrumbs {margin-top: .8rem; margin-left: 1.5rem;}
