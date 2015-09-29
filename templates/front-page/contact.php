@@ -2,7 +2,7 @@
 				<div class="well">
 				<a href="contact/"><span class="featured_items glyphicon glyphicon-record featured_item_icons text-center"></span></a>
 				<div class="no_color">
-					<a href="contact/"><h2 class="front-page-heading text-center">Contact</h2></a>
+					<a href="contact/"><h2 class="front-page-heading text-center">Contact Us</h2></a>
 				</div>
 				
 							<a href="contact" alt="contact us figure"><img class="img-responsive img-center" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/icons/Contact.png"/></a>

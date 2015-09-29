@@ -2,7 +2,7 @@
 				<div class="well">
 				<a href="FAQ/"><span class="featured_items glyphicon glyphicon-record featured_item_icons text-center"></span></a>
 				<div class="no_color">
-					<a href="FAQ/"><h2 class="front-page-heading text-center">FAQ</h2></a>
+					<a href="FAQ/"><h2 class="front-page-heading text-center">FAQs</h2></a>
 			  </div>
 			  
 					<?php 
