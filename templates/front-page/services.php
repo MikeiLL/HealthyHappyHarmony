@@ -39,6 +39,5 @@
 							<?php wp_reset_postdata(); ?>
 
 						<?php endif; ?>
-						<a href="Service#bottom">link</a>
 				</div>
 			</div><!-- end span 6-->

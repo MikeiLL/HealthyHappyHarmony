@@ -14,7 +14,7 @@
     <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">Hamilton Wellness Resources</a>
       <?php if(is_front_page()) : ?>
 			<div class="center-block free_consultation">
-				<button class="btn btn-primary btn-lg outline" type="button"><a href="initial-consultation">Free Consultation</a></button>
+				<a href="initial-consultation" class="btn btn-primary btn-lg outline">Free Consultation</a>
 			</div>
 		</div>
 		<div class="center-block tagline"><?php echo get_bloginfo ( 'description' ); ?></div>
