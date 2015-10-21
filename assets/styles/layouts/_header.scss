@@ -156,8 +156,8 @@
 
 .tagline {
 	text-align: center;
-	font-size: 1.6rem;
-	word-spacing: 30px;
+	font-size: 1.2rem;
+	word-spacing: .4rem;
 	opacity: 0.4;
 	position: absolute;
 	bottom: 0;
@@ -195,7 +195,7 @@
 		background-size: 1792px 840px;
 	}
 	.tagline {
-		font-size: 3rem;
+		font-size: 2.7rem;
 	}
 }
 
@@ -258,7 +258,7 @@
 }
 @media screen and (min-width: 60em) {
 	.tagline {
-		font-size: 6rem;
+		font-size: 3.2rem;
 		margin-left: -45rem;
 	}
 }

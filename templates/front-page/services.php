@@ -1,3 +1,6 @@
+<?php 
+use Roots\Sage\Extras; 
+?>
 		<div class="col-sm-4 col">
 				<div class="well">
 				<a href="Service/"><span class="featured_items glyphicon glyphicon-record featured_item_icons text-center"></span></a>
@@ -17,22 +20,19 @@
 						if( $posts ): ?>
 							
 							<div class="list-group">
-							<?php 
-							$my_anchor = 1;
-							?>		
+	
 							<?php foreach( $posts as $post ): 
 		
-								setup_postdata( $post )
+								setup_postdata( $post );
 		
 								?>
 
-							<a href="Service#<?=$my_anchor?>" class="list-group-item">
+							<a href="Service#<?php echo Extras\formatUrl(get_the_title(), '-'); ?>" class="list-group-item">
 
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
 							</a>
 							
-							<?php $my_anchor += 1 ?>
 							<?php endforeach; ?>
 							</div> <!-- End list-group -->
 	

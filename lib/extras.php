@@ -323,3 +323,11 @@ function save_featured_meta($post_id){
         }
 add_action('save_post', __NAMESPACE__ . '\\save_featured_meta');
 // EOF Featured Article 
+
+function formatUrl($str, $sep='-')
+    {
+            $res = strtolower($str);
+            $res = preg_replace('/[^[:alnum:]]/', ' ', $res);
+            $res = preg_replace('/[[:space:]]+/', $sep, $res);
+            return trim($res, $sep);
+    }
