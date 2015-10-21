@@ -97,5 +97,9 @@ $(".featured_items").hover(
           $(this).toggleClass('featured_item_icons_bigger');
        }
      );
-
+     
+  $("#share").jsSocials({
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest"]
+  });
+  
 })(jQuery); // Fully reference jQuery after this point.
