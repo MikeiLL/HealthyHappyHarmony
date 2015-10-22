@@ -9,7 +9,7 @@
 .widget_recent_entries {
 	background-image: url("../images/icons/Articles.png");
   background-repeat: no-repeat;
-  background-position: 40px 30px;
+  background-position: center 20px;
   ul {
   	margin-top: 200px;
   	list-style-type: none;
@@ -36,4 +36,8 @@
   		font-size: $font-size-base;
   	}
 	}
+}
+
+.textwidget {
+	padding: $default-margin-width;
 }
