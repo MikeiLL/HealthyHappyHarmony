@@ -16,7 +16,6 @@
 
 .main .row .col .well a:hover {
 	text-decoration: none;
-	color: $gray;
 	}
 	
 .no_color a { color: $gray-dark; }
@@ -26,7 +25,7 @@
 .list-group-item-linkable:hover {
     color: #555;
     text-decoration: none;
-    background-color: #f5f5f5;
+    background-color: $gray;
     cursor: pointer;
 }
 
@@ -37,6 +36,10 @@
     background-color: $body-bg;
     border-color: $body-bg;
     color: $text-color;
-    z-index: 2;
 }
 
+.list-group-item p:hover {
+		background-color: $list-group-hover-bg;
+		color: $text-color;
+		text-decoration: none;
+}

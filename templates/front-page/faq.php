@@ -1,3 +1,6 @@
+<?php 
+use Roots\Sage\Extras; 
+?>
 		<div class="col-sm-4 col">
 				<div class="well">
 				<a href="FAQ/"><span class="featured_items glyphicon glyphicon-record featured_item_icons text-center"></span></a>
@@ -24,7 +27,7 @@
 		
 								?>
 
-							<div class="list-group-item-linkable list-group-item active" data-link="FAQ">
+							<div class="list-group-item-linkable list-group-item active" data-link="FAQ#<?php echo Extras\formatUrl(get_the_title(), '-'); ?>">
 
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
