@@ -331,4 +331,31 @@ function formatUrl($str, $sep='-')
 		return trim($res, $sep);
 	}
 
-	
+// Deal with Validation errors produced by breadcrumb plugin
+function mc_add_sitemap_index($robots) {
+		$robots .= "Sitemap: " .
+		home_url( '/sitemap_index.xml' );
+		return $robots;
+	}
+add_filter ('robots_txt', __NAMESPACE__ . '\\mc_add_sitemap_index');
+
+function mc_microdata_breadcrumb ($link_output) {
+		$link_output = preg_replace(array('#<span xmlns:v="http://rdf.data-vocabulary.org/\#">#',
+											'#<span typeof="v:Breadcrumb"><a href="(.*?)" .*?'.'>(.*?)</a></span>#',
+											'#<span typeof="v:Breadcrumb">(.*?)</span>#','# property=".*?"#',
+											'#</span>$#'), 
+											array('','<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="$1" itemprop="url"><span itemprop="title">$2</span></a></span>','
+													<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">$1</span></span>',
+													'',
+													''), 
+											$link_output);
+
+		return $link_output;
+	}
+add_filter ('wpseo_breadcrumb_output', __NAMESPACE__ . '\\mc_microdata_breadcrumb');
+
+function mc_language_attributes ($output) {
+		$output .= ' version="HTML+RDFa 1.0"';
+		return $output;
+	}
+add_filter ('language_attributes', __NAMESPACE__ . '\\mc_language_attributes');
