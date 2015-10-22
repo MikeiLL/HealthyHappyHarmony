@@ -331,7 +331,7 @@ function formatUrl($str, $sep='-')
 		return trim($res, $sep);
 	}
 
-// Deal with Validation errors produced by breadcrumb plugin
+// BOF Deal with Validation errors produced by breadcrumb plugin
 function mc_add_sitemap_index($robots) {
 		$robots .= "Sitemap: " .
 		home_url( '/sitemap_index.xml' );
@@ -354,8 +354,5 @@ function mc_microdata_breadcrumb ($link_output) {
 	}
 add_filter ('wpseo_breadcrumb_output', __NAMESPACE__ . '\\mc_microdata_breadcrumb');
 
-function mc_language_attributes ($output) {
-		$output .= ' version="HTML+RDFa 1.0"';
-		return $output;
-	}
-add_filter ('language_attributes', __NAMESPACE__ . '\\mc_language_attributes');
+
+// EOF Deal with Validation errors produced by breadcrumb plugin
