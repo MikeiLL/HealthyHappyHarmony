@@ -19,8 +19,8 @@
 					</div>
 				<?php endif; ?>
 				<?php echo the_excerpt();?>
-				</div>
-			</div>
+				</div> <!-- /.well -->
+			</div> <!-- /.col-sm-4 col -->
 			<?php endwhile; else:
 			endif;
 			?>
