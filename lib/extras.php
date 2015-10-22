@@ -285,7 +285,7 @@ if ( ! function_exists( 'bns_dynamic_copyright' ) ) {
       empty( $args['end'] ) ? $output .= ' ' . sprintf( __('All rights reserved.') ) : $output .= ' ' . $args['end'];
  
       /* Construct and sprintf the copyright notice */
-      $output = sprintf( __('<span id="bns-dynamic-copyright"> %1$s </span><!-- #bns-dynamic-copyright -->'), $output );
+      $output = sprintf( __('<span class="copyright" id="bns-dynamic-copyright"> %1$s </span><!-- #bns-dynamic-copyright -->'), $output );
       $output = apply_filters( 'bns_dynamic_copyright', $output, $args );
  
       echo $output;
