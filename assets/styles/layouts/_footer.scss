@@ -79,3 +79,29 @@ $transition: background 200ms ease-in-out, color 200ms ease-in-out, border-color
 .copyright {
 	margin-left: $default-margin-width;
 }
+
+	
+.secondary-tagline {
+	@extend .tagline;
+	text-align: center;
+	font-size: 1.6rem;
+	color: $brand-primary;
+	width: 90%;
+	position: relative;
+	bottom: 0;
+	margin-left: -45%;
+	margin-bottom: 0;
+	}
+	
+@media screen and (min-width: 768px) {
+	.secondary-tagline {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.secondary-tagline {
+		font-size: 6rem;
+		margin-left: -45rem;
+	}
+}
