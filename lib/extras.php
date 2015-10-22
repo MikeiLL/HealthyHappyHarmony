@@ -356,3 +356,16 @@ add_filter ('wpseo_breadcrumb_output', __NAMESPACE__ . '\\mc_microdata_breadcrum
 
 
 // EOF Deal with Validation errors produced by breadcrumb plugin
+
+// BOF Display recent posts excluding current one
+
+function my_widget_posts_args($args) {
+		return array(
+			'posts_per_page' => 10,
+			'no_found_rows' => true, 
+			'post_status' => 'publish', 
+			'ignore_sticky_posts' => true,
+    	'post__not_in' => array($GLOBALS['posts'][0]->ID )
+			 );
+	}
+add_filter( 'widget_posts_args',  __NAMESPACE__ . '\\my_widget_posts_args');
