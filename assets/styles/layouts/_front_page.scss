@@ -22,3 +22,21 @@
 .no_color a { color: $gray-dark; }
 
 .list-group .continued { display: none }
+
+.list-group-item-linkable:hover {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.list-group-item.active .list-group-item-text, 
+.list-group-item.active, 
+.list-group-item.active:focus, .list-group-item.active:hover,
+.list-group-item-text {
+    background-color: $body-bg;
+    border-color: $body-bg;
+    color: $text-color;
+    z-index: 2;
+}
+

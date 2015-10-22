@@ -101,5 +101,17 @@ $(".featured_items").hover(
   $("#share").jsSocials({
             shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest"]
   });
-  
+ // Make list group FAQ clickable 
+$(document).ready(function() {
+    $('.list-group-item-linkable').on('click', function() {
+        window.location.href = $(this).data('link');
+        // new window:
+        //window.open($(this).data('link'));
+    });
+
+    $('.list-group-item-linkable a, .list-group-item-linkable')
+    .on('click', function(e) {
+        e.stopPropagation();
+    });
+});
 })(jQuery); // Fully reference jQuery after this point.

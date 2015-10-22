@@ -27,10 +27,18 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
 /**
  * Clean up the_excerpt()
  */
-function excerpt_more() {
-  return ' &hellip; <a class="continued" href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
-}
-add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+ $source = 'not general';
+
+add_filter('excerpt_more', function() use ( $source ) {
+	echo $source;
+	if ($source == "general")
+  		return ' &hellip; <a class="continued" href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
+  else
+  		return ' &hellip;';
+	}, 11
+);
+
+
 
 
 //* BOF FAQ POST TYPE

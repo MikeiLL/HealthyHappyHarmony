@@ -19,7 +19,7 @@
 		</div>
 		<div class="center-block tagline"><?php echo get_bloginfo ( 'description' ); ?></div>
 	<?php endif ?>
-  </div> <! -- end container -->
+  </div> <!-- end container -->
 
 </header>
 <?php if ( !is_front_page() && !is_home() && function_exists('yoast_breadcrumb') ) {

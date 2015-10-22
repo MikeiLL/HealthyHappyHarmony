@@ -24,13 +24,14 @@
 		
 								?>
 
-							<a href="FAQ" class="list-group-item">
+							<div href="FAQ" class="list-group-item-linkable list-group-item active" data-link="http://www.google.com">
 
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
-									<p class="list-group-item-text"><?php the_excerpt(); ?></p>
+									<p class="list-group-item">
+									<?php echo get_the_excerpt(); ?></p>
 
-							</a>
+							</div>
 							
 							<?php endforeach; ?>
 							

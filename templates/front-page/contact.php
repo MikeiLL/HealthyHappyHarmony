@@ -5,7 +5,7 @@
 					<a href="contact/"><h2 class="front-page-heading text-center">Contact Us</h2></a>
 				</div>
 				
-							<a href="contact" alt="contact us figure"><img class="img-responsive img-center" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/icons/Contact.png"/></a>
+							<a href="contact"><img alt="contact us figure" class="img-responsive img-center" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/icons/Contact.png"/></a>
 
 							<h4 style="text-align:center"><a href="contact">Tell Us About Your Work</a></h4>
 							<p>&nbsp;</p>
