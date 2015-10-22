@@ -25,4 +25,3 @@
 			endif;
 			?>
 
-		</div><!-- end span 6-->

@@ -24,21 +24,21 @@
 		
 								?>
 
-							<div href="FAQ" class="list-group-item-linkable list-group-item active" data-link="http://www.google.com">
+							<div class="list-group-item-linkable list-group-item active" data-link="FAQ">
 
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
 									<p class="list-group-item">
 									<?php echo get_the_excerpt(); ?></p>
 
-							</div>
+							</div><!-- ./list-group-item-linkable -->
 							
 							<?php endforeach; ?>
 							
-							</div> <!-- End list-group -->
+							</div> <!-- ./list-group -->
 	
 							<?php wp_reset_postdata(); ?>
 
 						<?php endif; ?>
-				</div>
-			</div><!-- end span 6-->
+				</div><!-- ./well -->
+			</div><!-- ./col-sm-4 col -->

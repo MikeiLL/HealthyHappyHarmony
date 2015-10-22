@@ -34,10 +34,11 @@ use Roots\Sage\Extras;
 							</a>
 							
 							<?php endforeach; ?>
-							</div> <!-- End list-group -->
+							
+							</div> <!-- ./list-group -->
 	
 							<?php wp_reset_postdata(); ?>
 
 						<?php endif; ?>
-				</div>
-			</div><!-- end span 6-->
+				</div><!-- ./well -->
+			</div><!-- ./col-sm-4 col -->

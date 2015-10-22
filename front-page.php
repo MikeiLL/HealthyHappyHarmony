@@ -13,15 +13,10 @@
 			<?php get_template_part('templates/front-page/services'); ?>
 			<?php get_template_part('templates/front-page/contact'); ?>
 			<?php get_template_part('templates/front-page/faq'); ?>
-		</div><!-- end row -->
+		</div><!-- /.row col-wrap first row-->
 		
-
-		
-
-		<!-- top row of wells or rounded corner divs -->
-
 		<div class="row col-wrap">
 				<?php get_template_part('templates/front-page/articles'); ?>		
-		</div><!-- end row -->
+		</div><!-- /.row col-wrap second row -->
 
 <?php endwhile; ?>
