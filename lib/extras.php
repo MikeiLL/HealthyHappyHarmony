@@ -27,18 +27,30 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
 /**
  * Clean up the_excerpt()
  */
- $source = 'not general';
-
-add_filter('excerpt_more', function() use ( $source ) {
-	echo $source;
+function excerpt_more($source="general") {
 	if ($source == "general")
   		return ' &hellip; <a class="continued" href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
   else
-  		return ' &hellip;';
-	}, 11
-);
+  		return ' &hellip; ';
+}
+add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
-
+/**
+ * Allows for excerpt generation outside the loop.
+ * 
+ * @param string $text  The text to be trimmed
+ * @return string       The trimmed text
+ */
+function mzoo_trim_excerpt( $text='xoxoxo' )
+{
+    $text = strip_shortcodes( $text );
+    $text = apply_filters('the_content', $text);
+    $text = str_replace(']]>', ']]&gt;', $text);
+    $excerpt_length = apply_filters('excerpt_length', 15);
+    $excerpt_more = apply_filters('excerpt_more', ' ' . '[......]');
+    return wp_trim_words( $text, $excerpt_length, $excerpt_more );
+}
+add_filter('wp_trim_excerpt', __NAMESPACE__ . '\\mzoo_trim_excerpt');
 
 
 //* BOF FAQ POST TYPE
