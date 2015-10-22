@@ -1,10 +1,10 @@
 <article <?php post_class(); ?>>
   <header>
-  	<?php if (($posts[0]->post_type != 'faq') && ($posts[0]->post_type != 'service')) : ?>
+  	<?php if (($post->post_type != 'faq') && ($post->post_type != 'service')) : ?>
    	 <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
    	<?php else: ?>
    	<?php $content_class = "large_text_display"; ?>
-   	 <a class="archive_title" href="<?=the_permalink()?>"><h2 class="entry-title"><?php the_title(); ?></h2></a>
+   	 <h2 class="entry-title"><?php the_title(); ?></h2>
    	<?php endif ?>
     <?php if ($posts[0]->post_type == 'post')
       		get_template_part('templates/entry-meta'); ?>
