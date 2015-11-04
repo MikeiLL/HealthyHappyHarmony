@@ -41,3 +41,15 @@
 .textwidget {
 	padding: $default-margin-width;
 }
+.linkedin_sidebar {
+	@extend .textwidget;
+	font-size: $font-size-large;
+}
+.linkedin_sidebar > a:hover, .linkedin_sidebar > a:focus {
+	text-decoration: none;
+	color:$brand_success;
+}
+.fa-linkedin:hover {
+	text-decoration: none;
+	color:$brand_success;
+}
