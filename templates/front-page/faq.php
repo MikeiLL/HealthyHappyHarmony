@@ -1,5 +1,5 @@
-<?php 
-use Roots\Sage\Extras; 
+<?php
+use Roots\Sage\Extras;
 ?>
 		<div class="col-sm-4 col">
 				<div class="well">
@@ -7,39 +7,39 @@ use Roots\Sage\Extras;
 				<div class="no_color">
 					<a href="FAQ/"><h2 class="front-page-heading text-center">FAQs</h2></a>
 			  </div>
-			  
-					<?php 
-					
+
+					<?php
+
 						$posts = get_posts(array(
 							'posts_per_page'	=> -1,
 							'post_type'			=> 'faq',
-							'orderby'				=> 'title', 
+							'orderby'				=> 'title',
 							'order' 				=> 'ASC'
 						));
 
 						if( $posts ): ?>
-							
+
 							<div class="list-group">
-									
-							<?php foreach( $posts as $post ): 
-		
+
+							<?php foreach( $posts as $post ):
+
 								setup_postdata( $post )
-		
+
 								?>
 
-							<div class="list-group-item-linkable list-group-item active" data-link="FAQ#<?php echo Extras\formatUrl(get_the_title(), '-'); ?>">
+						  <a href="FAQ#<?php echo Extras\formatUrl(get_the_title(), '-'); ?>" class="list-group-item">
 
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
-									<p class="list-group-item">
-									<?php echo get_the_excerpt(); ?></p>
+							</a>
 
-							</div><!-- ./list-group-item-linkable -->
-							
+
+
+
 							<?php endforeach; ?>
-							
+
 							</div> <!-- ./list-group -->
-	
+
 							<?php wp_reset_postdata(); ?>
 
 						<?php endif; ?>

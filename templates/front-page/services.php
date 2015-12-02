@@ -1,5 +1,5 @@
-<?php 
-use Roots\Sage\Extras; 
+<?php
+use Roots\Sage\Extras;
 ?>
 		<div class="col-sm-4 col">
 				<div class="well">
@@ -7,24 +7,24 @@ use Roots\Sage\Extras;
 				<div class="no_color">
 					<a href="Service/"><h2 class="front-page-heading text-center">Services</h2></a>
 				</div>
-			
-					<?php 
-					
+
+					<?php
+
 						$posts = get_posts(array(
 							'posts_per_page'	=> -1,
 							'post_type'			=> 'service',
-							'orderby'				=> 'date', 
+							'orderby'				=> 'date',
 							'order' 				=> 'DESC'
 						));
 
 						if( $posts ): ?>
-							
+
 							<div class="list-group">
-	
-							<?php foreach( $posts as $post ): 
-		
+
+							<?php foreach( $posts as $post ):
+
 								setup_postdata( $post );
-		
+
 								?>
 
 							<a href="Service#<?php echo Extras\formatUrl(get_the_title(), '-'); ?>" class="list-group-item">
@@ -32,11 +32,11 @@ use Roots\Sage\Extras;
 									<h4 class="list-group-item-heading"><?php the_title(); ?></h4>
 
 							</a>
-							
+
 							<?php endforeach; ?>
-							
+
 							</div> <!-- ./list-group -->
-	
+
 							<?php wp_reset_postdata(); ?>
 
 						<?php endif; ?>
