@@ -17,20 +17,20 @@
 	margin: 0;
 	width: 100%;
 	position: relative;
-	overflow: auto;
+	//overflow: auto;
 }
 
 /* The following adapted from JSFiddle for matching height responsive fluid divs */
 @media (min-width: 768px) {
 
 	/* top row */
-	.col .well{ 
+	.col .well{
 			margin-bottom: -99999px;
-			padding-bottom: 100030px;  
+			padding-bottom: 100030px;
 	}
 
 	/* bottom row */
-	.col-base{ 
+	.col-base{
 			margin-top: -15px; /* cut off top portion of bottom wells */
 	}
 }
@@ -42,7 +42,7 @@
 }
 
 .col-wrap{
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .well {
