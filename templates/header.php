@@ -2,6 +2,9 @@
 	<?php if(is_front_page()) : ?>
 		<div class="greeting">
 	<?php endif ?>
+
+  <div class="container-full">
+    <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">Hamilton Wellness Resources</a>
     <nav role="navigation">
       <?php
       if (has_nav_menu('primary_navigation')) :
@@ -9,9 +12,6 @@
       endif;
       ?>
     </nav>
-
-  <div class="container-full">
-    <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">Hamilton Wellness Resources</a>
       <?php if(is_front_page()) : ?>
 			<div class="center-block free_consultation">
 				<a href="initial-consultation" class="btn btn-primary btn-lg outline">Free Consultation</a>
