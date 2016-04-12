@@ -1,9 +1,11 @@
 <header class="banner" role="banner">
 	<?php if(is_front_page()) : ?>
 		<div class="greeting">
+    <div class="container-full">
+  <?php else: ?>
+    <div class="container-head">
 	<?php endif ?>
 
-  <div class="container-full">
     <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">Hamilton Wellness Resources</a>
     <nav role="navigation">
       <?php
