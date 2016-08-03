@@ -48,3 +48,17 @@
 		color: $text-color;
 		text-decoration: none;
 }
+
+.btn-primary.outline, .comment-form input.outline[type="submit"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 900px) {
+  .free_consultation {
+      border-radius: 4px;
+      margin-top: 25rem;
+      padding: 2rem;
+  }
+}
