@@ -15,9 +15,9 @@
 
           <h4 style="text-align: center;">850 232-5175</h4>&nbsp;
 
-          <p style="text-align: center;"><a href="mailto:sheri@hamiltonwellnessresources.com">sheri @
+          <p style="text-align: center;"><a href="mailto:sheri@hamiltonresourcespensacola.com">sheri @
 
-          <br/>hamiltonwellnessresources.com</a></p>
+          <br/>hamiltonresourcespensacola.com</a></p>
 
 					</div> <!-- end well -->
 			</div><!-- end span 4-->
